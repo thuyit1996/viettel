@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "CH Chúc Sơn - Trung Tâm Viettel Chương Mỹ",
+        "type" : "news"
+    },
+    {
+        "id": 2,
+        "title": "Viettel Hà Nội thông báo tuyển dụng nhân viên chăm sóc khách hàng",
+        "type" : "news"
+    },
+    {
+        "id": 3,
+        "title": "Đồng hồ thông minh trẻ em MyKID – Kết nối gia đình 4.1",
+        "type" : "news"
+    },
+    {
+        "id": 4,
+        "title": "Viettel khởi tạo nên cuộc cách mạng chăm sóc khách hàng với Viettel++ ",
+        "type" : "news"
+    },
+    {
+        "id": 5,
+        "title": "[HOT] Gói trả sau V200 Viettel miễn phí 20 phút gọi đầu tiên + 2GB/ngày chỉ 200k/tháng",
+        "type" : "news"
+    },
+    {
+        "id": 6,
+        "title": "Đăng ký gói UMAX300 Viettel nhận đến 30GB data tốc độ cao",
+        "type" : "news"
+    },
+    {
+        "id": 7,
+        "title": "Viettel nhân đôi băng thông dịch vụ Internet giá không đổi từ 1/6 ",
+        "type" : "news"
+    },
+    {
+        "id": 8,
+        "title": "Tiến ra nước ngoài, Viettel đã góp phần thay đổi hình ảnh Việt Nam như thế nào? ",
+        "type" : "news"
+    },
+    {
+        "id": 9,
+        "title": "Hành trình 30 năm từ xây lắp đến ông lớn công nghiệp viễn thông của Viettel",
+        "type" : "news"
+    },
+    {
+        "id": 10,
+        "title": "Sản phẩm số của Viettel được đề cử top 3 sản phẩm sáng tạo nhất Châu Á",
+        "type" : "news"
+    }
+]

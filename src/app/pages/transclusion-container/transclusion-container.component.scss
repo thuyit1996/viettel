@@ -1,0 +1,82 @@
+@import '../../../scss/mixin.scss';
+.top-picture {
+  max-width: 100%;
+}
+.row-eq-height {
+  @extend %row-equal-height;
+}
+.side-menu {
+  h3 {
+    color: #fff;
+    background: #00918d;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 0;
+    // background: rgba(#ccc, 0.5);
+    background: rgba(#ccc, 0.5);
+    li {
+      list-style-type: none;
+      padding: 8px 10px;
+    }
+  }
+}
+
+.related-article {
+  h3 {
+    color: #fff;
+    background: #00918d;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 0;
+    background: rgba(#ccc, 0.5);
+    li {
+      list-style-type: none;
+      padding: 8px 10px;
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  background: rgba(#ccc, 0.5);
+  h3 {
+    color: #fff;
+    background: #00918d;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  a {
+    color:#00918d;
+  }
+  
+  > img {
+    width: 100%;
+  }
+  a {
+    color: #000;
+    &:hover,
+    &:focus {
+      color: red;
+    }
+  }
+
+  .phone {
+    color: red;
+  }
+
+  .ho-tro-ky-thuat {
+    text-align: center;
+    a {
+      font-size: 30px;
+      color: red;
+    }
+  }
+}

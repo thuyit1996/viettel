@@ -1,0 +1,49 @@
+%icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+%full-width {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+}
+%row-equal-height {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin styled-list ($color: $primary-color) {
+    li {
+        list-style-type: none;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: $color;
+          margin-right: 10px;
+        }
+      }
+}
+$screen-xs-max: 768px;
+$screen-sm-min: $screen-xs-max + 1px;
+$screen-sm-max: 992px;
+$screen-md-min: $screen-sm-max + 1px;
+$screen-md-max: 1200px;
+$screen-lg-min: 1400px;
+
+$card-length: 135px;
+
+$primary-color: #00908c;
+
+$font-size-1: 45px;
+$font-size-2: 40px;
+$font-size-3: 24px;
+$font-size-4: 20px;
+$font-size-5: 18px;
+$font-size-6: 16px;

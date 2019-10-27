@@ -1,0 +1,201 @@
+@import '../../scss/mixin.scss';
+$navbar-horizontal-padding: 25px;
+.navbar {
+  border-radius: 0;
+  border-radius: 0;
+  background: $primary-color;
+  border: none;
+  position: relative;
+  z-index: 1;
+  @media (min-width: $screen-sm-min) {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-left: -15px;
+    margin-right: -15px;
+    &.collapsed { 
+      height: auto;
+      // overflow: auto;
+    }
+    ul {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  
+  .nav.navbar-nav {
+    margin-left: -22px;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      
+      list-style-type: none;
+      a:hover, a:focus {
+        background: transparent;
+        // opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+  }
+
+  > ul {
+    padding-left: 0;
+    > li {
+      list-style-type: none;
+      background: transparent;
+      &:hover,&:focus {
+        background-color: transparent;
+      }
+      > a {
+        background: $primary-color;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: $font-size-6;
+        padding-left: $navbar-horizontal-padding;
+        padding-right: $navbar-horizontal-padding;
+        &.active-link {
+          // color: #850015
+          background: #d78531;  
+        }
+        
+      }
+      &.has-sub-menu {
+        background: url("../../assets/images/arrow-down.svg") right no-repeat;
+        position: relative;
+        @media (max-width: $screen-xs-max) {
+          background-position-y: 5px;
+          background-position-x: calc(100% - 5px);
+        }
+        &:hover {
+          ul {
+            display: block;
+            // opacity: 0.7;
+          }
+        }
+        ul {
+          display: none;
+          position: absolute;
+          width: 150px;
+          background: $primary-color;
+
+          @media (max-width: $screen-xs-max) {
+            position: relative;
+            width: 100%;
+          }
+
+          li {
+            padding: 5px $navbar-horizontal-padding;
+            a {
+              color: #fff;
+              cursor: pointer;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          } 
+        }
+        
+      }
+    }
+  }
+}
+#top {
+  height: 88px;
+  @media (max-width: $screen-xs-max) {
+    height: 100px;
+  }
+  @media (min-width: $screen-sm-min) {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+  }
+  
+  background: #fff;
+  a.main-logo {
+    width: calc(20%);
+    height: 50px;
+    margin-top: 3px;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 31px;
+    text-decoration: none;
+    @media (max-width: $screen-xs-max) {
+      font-size: 22px;
+      width: calc(100% - 80px);
+      line-height: 1.1;
+    }
+    @media (min-width: $screen-xs-max) {
+      height: 80px;
+      padding-left: 100px;
+    }
+    color: #850015;
+    font-weight: bold;
+    background: url("https://www.caviettel.com/images/logo/viettel-ca-logo.png") left no-repeat;
+    background-size: contain;
+    padding-left: 60px;
+    position: relative;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    a {
+      position: absolute;
+      width: calc(100% - 80px);
+      height: 100%;
+    }
+  }
+  .info {
+    float: right;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: url("https://www.caviettel.com/images/bn-ca.jpg") left no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    // a {
+    //   color: #fff;
+    //   font-size: 24px;
+    //   &:hover {
+    //     color: #fff;
+    //     opacity: 1;
+    //   }
+    // }
+    
+    @media (max-width: $screen-xs-max) {
+      position: absolute;
+      width: 100%;
+      height: 47px;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .collapse-button {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 3px;
+
+    .icon-bar {
+      height: 7px;
+      background: #000;
+      margin-top: 5px;
+      cursor: pointer;
+      &:first-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
+}
