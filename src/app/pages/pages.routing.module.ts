@@ -17,11 +17,11 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'digital-signature',
+        path: 'chukyso',
         component: ArticleDigitalsignatureComponent,
       },
       {
-        path: 'electric-bill',
+        path: 'hoadondientu',
         component: ArticleElectricbillComponent,
       },
       {

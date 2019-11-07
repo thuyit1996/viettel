@@ -1,9 +1,9 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 const routes: Routes = [
-    { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
-    { path: '', redirectTo: 'pages', pathMatch: 'full' },
-    { path: '**', redirectTo: 'pages', pathMatch: 'full' }
+    { path: '', loadChildren: './pages/pages.module#PagesModule' },
+    { path: '', redirectTo: '', pathMatch: 'full' },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 const config: ExtraOptions = {
