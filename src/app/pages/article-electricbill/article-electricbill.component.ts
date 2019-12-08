@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { tap } from 'rxjs/operators';
+declare var $;
 
 @Component({
   selector: 'pm-article-electricbill',
@@ -16,6 +17,8 @@ export class ArticleElectricbillComponent implements OnInit {
 
   ngOnInit() {
     this.getDataByUrl();
+    window.scrollTo(0, 0);
+    $('pm-root').scrollTop(0);
   }
 
 

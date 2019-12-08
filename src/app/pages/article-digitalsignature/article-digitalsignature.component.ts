@@ -15,7 +15,7 @@ export class ArticleDigitalsignatureComponent implements OnInit {
 
   ngOnInit() {
     this.getDataByUrl();
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   getDataByUrl() {
