@@ -46,8 +46,10 @@
       .icon-box{
         width: 100px;
         height: 100px;
+        display: inline-block;
+        margin-bottom: 50px;
         img{
-          margin-left: 170%;
+          // margin-left: 170%;
           &:hover{
             opacity: .6;
           }
