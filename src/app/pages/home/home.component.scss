@@ -1,5 +1,18 @@
 @import '../../../scss/mixin.scss';
 
+.responsive-table {
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 11px;
+    &.smaller {
+      font-size: 9px;
+    }
+  }
+}
+
 .frontpage {
   // .slideshow {
   //   background: url("../../assets/images/main-slide.jpg") center no-repeat;

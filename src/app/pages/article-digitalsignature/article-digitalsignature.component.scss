@@ -24,6 +24,19 @@ table {
   }
 }
 
+.responsive-table {
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 11px;
+    &.smaller {
+      font-size: 9px;
+    }
+  }
+}
+
 .image {
   width: 100%;
   height: 300px;
